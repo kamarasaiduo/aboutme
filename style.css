@@ -486,12 +486,12 @@ nav .fas{
         font-size: 60px;
     }
         .author-profession{
-            font-size: 13px;
+            font-size: 20px;
             color: #d1cfcf;
         }
         
        .header-text h1{
-        font-size: 14px;
+        font-size: 18px;
     }
 
     nav .fas{
@@ -552,7 +552,7 @@ nav .fas{
       }
 
       .date-name, .date-string, .time-name, .time-string, .copyright{
-        font-size: 16px;
+        font-size: 18px;
     
       }
      footer {
@@ -562,8 +562,8 @@ nav .fas{
     align-items: center;
     background-color: #8c7979;
     color: white;
-    padding: 15px 0;
-    margin-top: 15px;
+    padding: 10px 0;
+    margin-top: 10px;
     
   }
 }
