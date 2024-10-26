@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saidu O Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+
+</head>
+<body> 
+<div id="header">
+    <div class="container">
+        <nav class="nav">
+            <img class="logo" src="webimages/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">contact</a></li> 
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p class="author-profession">Web Developer</p>
+            <H1>Hi, am <span>Saidu O.</span><br> from Sierra Leone</H1>
+        </div>     
+    </div>
+</div>
+<!--The About Section-->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="webimages/user.png" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore odit eius sequi, dicta officia placeat non recusandae minus iusto maiores, vitae laudantium necessitatibus praesentium ea porro, accusamus soluta et fuga.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                       <li><span>UI/UX</span> <br> Design Web/App Interfaces </li>
+                       <li><span>Web Development</span> <br> Design Web/App Interfaces </li>
+                      <li><span>App Development</span> <br> Design Web/App Interfaces </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Hardware</span> <br>  </li>
+                        <li><span>Software</span> <br> Design Web/App Interfaces </li>
+                       <li><span>App Development</span> <br> Design Web/App Interfaces </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                       <li><span>2020</span> <br>Diploma in Computer Science </li>
+                       <li><span>2022</span> <br>BSc. in Computer Science </li>
+                      <li><span></span> <br></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------Services------>
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="service-list">
+            <div>
+                <i class="fa fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Design static Websites.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa fa-desktop"></i>
+                <h2>Computer Repair</h2>
+                <p>Dianose various types of PCs (Both desktops and laptops)
+                   proffer technical advice regarding hardwares compatibilities and replacement where necessary.
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <img class="software-icon"  src="webimages/software.png" alt="">
+                <h2>Computer Software</h2>
+                <p>Provide technical software related issues. <br>
+                   Access system customer needs, software and hardfor compatibility factor
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+           
+        </div>
+    </div>
+</div>
+
+<!--Portfolio-->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="webimages/image-1.jpg" alt="">
+                <div class="layer">
+                    <h3>Web Developer</h3>
+                    <P>Design Static Website</P>
+                    <a href="#">visit<i class="fas fa-internal-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="webimages/image-1.jpg" alt="">
+                <div class="layer">
+                    <h3>PC Repair</h3>
+                    <P>Diagnose computer and replace faulty damage parts.</P>
+                    <a href="#">visit<i class="fas fa-internal-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="webimages/image-1.jpg" alt="">
+                <div class="layer">
+                    <h3>Software related assistance</h3>
+                    <P>Diagnose computer and replace faulty damage parts.</P>
+                    <a href="#">visit<i class="fas fa-internal-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn" >See more</a>
+    </div>
+</div>
+
+<!--Contact-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title" >Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> kamarasaidu558@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> +232 79 767 376</p>
+                <div class="social-icons">
+                    <a href="www.facebook.com"><i class="fab fa-facebook"></i></a>
+                    <a href="www.facebook.com"><i class="fab fa-git"></i></a>
+                    <a href="www.facebook.com"><i class="fab fa-twitter-square"></i></a>
+                    <a href="www.facebook.com"><i class="fab fa-instagram"></i></a>
+                    <a href="www.facebook.com"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="webimages/my-cv.pdf" download class="btn btn2" >Download my CV</a>
+            </div>
+            <div class="contact-right">
+                <form action="">
+                    <input type="text" name="Name" placeholder="Your Name" required> 
+                    <input type="email" name="Email" placeholder="Your Email" required> 
+                    <input type="phone" name="phone" placeholder="Phone (Optional)" required> 
+                    <textarea name="Message" rows="6" placeholder="Message"></textarea>
+                    <button type="submit" class="btn btn3">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+
+   <!--Footter-->
+   <body>
+   <!-- <div style="height: 1500px;">
+    Page content to enable scrolling 
+      <h1>Scroll down to see the footer</h1>
+    </div>
+          -->
+    <footer>
+      <div class="copyright">&copy; Saidu O. Kamara 2024. All Rights Reserved.</div>
+      <div class="time-string" id="time-string">0:0:00</div>
+    </footer>
+</div>
+
+<!--JavaScript-->
+
+<script>
+  
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(let tablink of tablinks){
+            tablink.classList.remove("active-link"); 
+        }
+        for(let tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab"); 
+        }
+
+        document.getElementById(tabname).classList.add("active-tab"); 
+        event.target.classList.add("active-link"); 
+   
+    }
+</script>
+ 
+ 
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+
+
+
+
+<script>
+const scriptURL = '<SCRIPT URL'
+const form = document.form['submit-to-google-sheet']
+const msg = document.getElementById(MSG)
+
+form.addEventLister('submit', e=> {
+    e.preventDefault()
+    fetch(scriptURL, {method: 'post', body: new ForData(form)})
+    .then(response => {
+        msg.innerHTML ="Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },5000)
+        form.reset()
+    })
+    .catch(error => console.error('Error!', error.message))
+})
+</script>
+
+<!--Clock script-->
+
+<script>
+    function updateclock(){
+
+const now = new Date()
+
+let hour = now.getHours().toString().padStart(2,0)
+const minutes = now.getMinutes().toString().padStart(2,0)
+const seconds = now.getSeconds().toString().padStart(2,0)
+const timeString = `${hour}:${minutes}:${seconds}  `;
+document.getElementById('time-string').innerText = timeString;
+
+}
+
+updateclock();
+
+setInterval(updateclock, 1000)
+</script>
+</body>
+</html>
