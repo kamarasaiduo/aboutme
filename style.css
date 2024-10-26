@@ -435,29 +435,10 @@ footer {
     margin-top: 20px;
     
   }
-  .date-name{
-    position: absolute;
-    right: 200px;
-    font-size: 16px;
-    color: #ffffff;
-  }
-
-  .date-string{
-    position: absolute;
-    right: 140px;
-    font-size: 10px;
-    color: #ffffff;
-  }
-  .time-name{
-    position: absolute;
-    right: 85px;
-    font-size: 13px;
-    color: #ffffff;
-  }
 
   .time-string {
     position: absolute;
-    right:70px;
+    right:40px;
     font-size: 20px;
     color: #ffffff;
   }
@@ -552,11 +533,11 @@ nav .fas{
       }
 
       .copyright{
-        font-size: 13px;
+        font-size: 15px;
       }
 
     .time-string {
-        font-size: 13px;
+        font-size: 15px;
     }
      footer {
     width: 100%;
