@@ -551,10 +551,13 @@ nav .fas{
         flex-basis: 100%;
       }
 
-      .date-name, .date-string, .time-name, .time-string, .copyright{
+      .copyright{
         font-size: 18px;
-    
       }
+
+    .time-string {
+        font-size: 15px;
+    }
      footer {
     width: 100%;
     display: flex;
