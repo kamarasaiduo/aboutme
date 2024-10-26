@@ -245,7 +245,7 @@ margin-bottom: 30px;
     font-size: 12px;
     margin-top: 20px;
     display: inline-block;
-}
+} 
 .service-list div:hover{
     background: #2867f0;
     transform: translateY(-10px);
@@ -462,7 +462,7 @@ footer {
   }
 
   .copyright {
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
   }
   
