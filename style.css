@@ -433,6 +433,7 @@ footer {
     color: white;
     padding: 25px 0;
     margin-top: 20px;
+    position: fixed;
   }
   .date-name{
     position: absolute;
@@ -551,7 +552,7 @@ nav .fas{
       }
 
       .date-name, .date-string, .time-name, .time-string, .copyright{
-        font-size: 10px;
+        font-size: 8px;
     
       }
 
