@@ -458,12 +458,12 @@ footer {
   .time-string {
     position: absolute;
     right:70px;
-    font-size: 25px;
+    font-size: 20px;
     color: #ffffff;
   }
 
   .copyright {
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
   }
   
@@ -552,10 +552,20 @@ nav .fas{
       }
 
       .date-name, .date-string, .time-name, .time-string, .copyright{
-        font-size: 8px;
+        font-size: 16px;
     
       }
-
+     footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8c7979;
+    color: white;
+    padding: 15px 0;
+    margin-top: 15px;
+    
+  }
 }
 #msg{
     color:#61b752;
