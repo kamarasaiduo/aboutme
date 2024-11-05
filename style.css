@@ -86,10 +86,10 @@ body{
 
 .author-profession{
 font-family: 'Trebuchet MS';
-font-size: 20px;
+font-size: 25px;
 font-weight: 800;
-color: #d1cfcf;
-font-family:  'Times New Roman', Times, serif;
+color: #f1ebeb;
+font-family: monospace;
 }
 
 .header-text h1{
@@ -98,7 +98,7 @@ font-family:  'Times New Roman', Times, serif;
 
 }
 .header-text span{
-    color: #2867f0;
+    color: #f5455d;
 }
  
 /*.....The about Section.......*/
@@ -173,6 +173,7 @@ color: #fff;
     background-color: #262626;
     padding: 10px 15px;
     border-radius: 6px;
+    height: 300px; /* remember to remover this property when u udpdate the sections */
     
     
 }
@@ -180,6 +181,7 @@ color: #fff;
 .tab-contents ul li{
     list-style: none;
     margin: 10px 0;
+    
    
 }
 
@@ -194,6 +196,12 @@ color: #fff;
 
 .tab-contents.active-tab{
     display: block;
+    
+}
+
+.tab-contents ul li h5{
+    color: rgb(255, 255, 255);
+    font-size: 13px;
 }
 
 /* Services */
