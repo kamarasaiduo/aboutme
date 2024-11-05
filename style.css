@@ -1,0 +1,596 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: black;
+    color: #fff;
+}
+
+#header{
+
+    width: 100%; 
+    height: 100vh;
+    background-image: url(webimages/background.png);
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+   
+}
+
+.container{
+    padding: 10px 10%;
+  
+    }
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 120px;
+}
+.nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;  
+   
+}
+
+.container .nav .logo{
+    background-color: #0b0b0b92;
+    border-radius: 25px;
+    padding: 0px 20px;
+    padding-top: 6px;  
+    border: solid;
+}
+.nav ul li a{
+    color: #2867f0;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;   
+}
+
+.nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: linear-gradient(to right, #2867f0, #ffffff);
+    position: absolute;
+    left: 0px;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+.nav ul li a:hover::after{
+    width: 100%;
+}
+
+.nav ul li:hover a{
+    opacity: 0.8;  
+}
+
+.header-text{
+    font-size: 50px;
+    margin-top:20%;
+}
+
+.author-profession{
+font-family: 'Trebuchet MS';
+font-size: 25px;
+font-weight: 800;
+color: #f1ebeb;
+font-family: monospace;
+}
+
+.header-text h1{
+    margin-top: 20px;
+    font-size: 40px;
+
+}
+.header-text span{
+    color: #f5455d;
+}
+ 
+/*.....The about Section.......*/
+
+#about{
+    padding: 80px 0;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 35%;
+}
+
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.about-col-2{
+    flex-basis: 60%;
+ /* text-align: center;*/
+}
+.sub-title{
+font-size: 60px;
+font-weight: 400;
+color: #fff;
+}
+
+/* About me tabs*/
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+    
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: linear-gradient(to right, #2867f0, #ffffff);
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.45s;
+}
+/*
+.tab-links:hover::after{
+    width: 100%;
+}
+*/
+
+.tab-links.active-link::after{
+    width: 100%;
+}
+
+.tab-contents ul{ 
+    background-color: #262626;
+    padding: 10px 15px;
+    border-radius: 6px;
+    height: 300px; /* remember to remover this property when u udpdate the sections */
+    
+    
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+    
+   
+}
+
+.tab-contents ul li span{
+    color: #2867f0;
+    font-size: 14px;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+    
+}
+
+.tab-contents ul li h5{
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+}
+
+/* Services */
+
+#services{
+    padding: 30px 0;
+}
+
+.service-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.service-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+    
+}
+
+.service-list div i{
+font-size: 50px;
+margin-bottom: 30px;
+}
+
+/* Image icon for software service which is not an online icon */
+.software-icon{
+    color: rgb(255, 255, 255);
+    width: 55px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+   
+.service-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.service-list div a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+} 
+.service-list div:hover{
+    background: #2867f0;
+    transform: translateY(-10px);
+
+}
+
+.service-list div:hover h2{
+    margin-bottom: 15px;
+
+} 
+
+/*portfolio */
+
+.portfolio{
+    padding: 30px 0;
+}
+
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 40px;
+}
+
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgb(0,0,0,0.5), #2867f0b7);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.layer h3{
+    font-weight:500;
+    margin-bottom: 20px;
+}
+
+.layer a{
+    margin-top: 20px;
+    color: #2867f0;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 60px;
+    background: #ebe1e1;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.work:hover img{
+    transform: scale(1.1);
+    
+}
+
+.work:hover .layer{
+    height: 100%;
+}
+
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid  #2867f0;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    transition: background 0.5s;
+}
+
+.btn:hover{
+    background: #2867f0;
+}
+
+/* Contact */
+
+.contact-left{
+    flex-basis: 35%; 
+}
+
+.contact-left p{
+    margin-top: 30px;
+}
+
+.contact-left p i{
+    color: #2867f0;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social-icons{
+    margin-top: 30px; 
+}
+
+
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover{
+    color: #2867f0;
+    transform: scale(1.1);
+
+}
+
+.btn.btn2{
+    display: inline-block;
+    background: #2867f0;
+    padding: 10px 15px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.contact-right{
+    flex-basis: 60%; 
+}
+
+.btn.btn3{
+    display: inline-block;
+    background: #2867f0;
+    padding: 14px 40px;
+    margin-top: 15px;
+    border-radius: 5px;
+    transition: opacity 0.5s;
+    font-weight: 500;
+    cursor: pointer;
+    color: #fff;
+    position: relative; 
+}
+.btn.btn3:active {
+    opacity: 0.6;  /* change the background color slightly on click */
+
+}
+
+/* Add text on hover using ::after pseudo-element */
+.btn.btn3:hover::after {
+    content: "Click only once"; 
+    position: absolute;
+    top: -60%;   /* Position below the button */
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    font-size: 12px;
+    opacity: 1;
+    transition: opacity 0.5s;
+    z-index: 1;
+
+}
+
+/* Initially hide the text */
+.btn.btn3::after {
+    content: ""; /* Ensure there's content even when hidden */
+    opacity: 0; /* Start hidden */
+    transition: opacity 0.5s; /* Transition for the opacity */
+}
+
+
+.contact-right form{
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #faedede5;
+    padding: 15px;
+    margin: 13px 0;
+    color: #000000;
+    font-size: 18px;
+    border-radius: 6px;
+    z-index: 2;
+    transition: right 0.5s;
+}
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8c7979;
+    color: white;
+    padding: 25px 0;
+    margin-top: 20px;
+    
+  }
+
+  .time-string {
+    position: absolute;
+    right:40px;
+    font-size: 20px;
+    color: #ffffff;
+  }
+
+  .copyright {
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  
+  
+
+/* css for small screens */
+nav .fas{
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+    #header{
+        background-image: url(webimages/phone-background1.png); 
+    }
+
+    .header-text{
+    margin-top: 100;
+
+        font-size: 60px;
+    }
+        .author-profession{
+            font-size: 20px;
+            color: #d1cfcf;
+        }
+        
+       .header-text h1{
+        font-size: 18px;
+    }
+
+    nav .fas{
+        display: block;
+        font-size: 25px;
+
+    }
+    nav ul{
+        background: #2867f0;
+        position: fixed;
+        top: 0px;
+        right: -150px;
+        width: 150px;
+        height: 60vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+       border-bottom-right-radius: 4px;
+       border-bottom-left-radius: 4px;
+       
+    }
+
+    .nav ul li a{
+      color: #fff;     
+    }
+
+    .nav ul li{
+        display: block; 
+        margin: 20px;   
+      }
+
+      nav ul .fas{
+        position: absolute;
+        top: 20px;
+        left: 90px;
+        cursor: pointer;
+      }
+      .sub-title{
+        font-size: 35px;
+      }
+      .about-col-1, .about-col-2{
+        flex-basis: 100%;
+      }
+
+      .about-col-1{
+        margin-bottom: 25px;
+      }
+
+      .about-col-2{
+        font-size:14px;
+      }
+      .tab-links{
+        font-size: 14px;
+        margin-right: 15px;
+      }
+      .contact-left,.contact-right{
+        flex-basis: 100%;
+      }
+
+      .copyright{
+        font-size: 15px;
+      }
+
+    .time-string {
+        font-size: 15px;
+    }
+     footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8c7979;
+    color: white;
+    padding: 10px 0;
+    margin-top: 10px;
+    
+  }
+}
+#msg{
+    color:#61b752;
+    margin-top: -40px;
+    display: block;
+}
+
