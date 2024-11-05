@@ -546,6 +546,8 @@ nav .fas{
 
     .time-string {
         font-size: 15px;
+        position: absolute;
+        right:20px;
     }
      footer {
     width: 100%;
@@ -556,6 +558,7 @@ nav .fas{
     color: white;
     padding: 10px 0;
     margin-top: 10px;
+    position: relative;
     
   }
 }
